@@ -12,7 +12,7 @@ def process_file(input_file):
 
     i = 0
     while i < len(lines):
-        if lines[i] == {"To do", "Damage"}:
+        if lines[i] in {"To do", "Damage"}:
             try:
                 time_of_inspection = lines[i + 1]
                 license_plate = lines[i + 2]
